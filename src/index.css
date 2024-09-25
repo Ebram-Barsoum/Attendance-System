@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ul a.active {
+    background-color: #FEC887;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FEC887 !important;
+}
+
+input[type="checkbox"]:checked svg {
+    color: #fff !important;
+}
+
+label {
+    font-family: theme("fontFamily.inter");
+}
+
+.scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
