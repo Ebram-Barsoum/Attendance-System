@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp"
 import AppLayout from "./ui/AppLayout"
 import Menu from "./ui/Menu"
 import Modal from "./ui/Modal"
+import CreateFolder from "./pages/CreateFolder"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="sessions/" element={<Sessions />} />
               <Route path="sessions/new-session/" element={<CreateSession />} />
               <Route path="sessions/:sessionId" element={<SessionDetails />} />
+              <Route path="sessions/new-folder/" element={<CreateFolder />} />
 
               <Route path="*" element={<NotFound />} />
             </Route>
