@@ -5,6 +5,7 @@ import { FiLogOut } from "react-icons/fi";
 
 import { Link } from "../lib/constants";
 import Button from "./Button";
+import { BsQrCodeScan } from "react-icons/bs";
 
 const links: Link[] = [
     {
@@ -17,6 +18,11 @@ const links: Link[] = [
         text: "Sessions",
         icon: <SiSession />,
     },
+    {
+        href: 'join-session',
+        text: 'Join by QR Code',
+        icon: <BsQrCodeScan />
+    }
 ];
 
 export default function SideNavs(): JSX.Element {

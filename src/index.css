@@ -26,3 +26,24 @@ label {
 .scroll-hidden::-webkit-scrollbar {
     display: none;
 }
+
+/* html5Qrcode style*/
+#QRCodeScanner__scan_region img {
+    margin: 0 auto;
+}
+
+/* #html5-qrcode-anchor-scan-type-change {
+    display: none;
+} */
+#QRCodeScanner__scan_region video:not(:nth-child(1)) {
+    display: none !important;
+}
+
+#QRCodeScanner__dashboard_section_csr>span {
+    display: none;
+}
+
+#QRCodeScanner__dashboard_section_csr>span:first-of-type,
+#QRCodeScanner__dashboard_section_csr>span:nth-of-type(2) {
+    display: block !important;
+}

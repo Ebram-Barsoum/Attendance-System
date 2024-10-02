@@ -12,7 +12,7 @@ export default function Sessions(): JSX.Element {
     return (
         <div className="flex flex-col gap-4 relative">
             <Header>Sessions</Header>
-            <Column className="gap-12">
+            <Column className="gap-16">
                 <FolderList />
                 <SessionsList />
             </Column>
