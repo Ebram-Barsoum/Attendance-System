@@ -1,9 +1,7 @@
-import { FiUpload } from "react-icons/fi";
 import CreateSessionForm from "../features/sessions/CreateSessionForm";
 import BackButton from "../ui/BackButton";
-import ButtonCircle from "../ui/ButtonCircle";
 import Header from "../ui/Header";
-import Button from "../ui/Button";
+import Row from "../ui/Row";
 
 export default function CreateSession(): JSX.Element {
     return (
@@ -13,12 +11,10 @@ export default function CreateSession(): JSX.Element {
                 <Header>Create new Session</Header>
             </div>
 
-            <CreateSessionForm />
-
-            <div className="flex items-center gap-3 fixed bottom-5 right-8">
-                <ButtonCircle className="p-4"><FiUpload /></ButtonCircle>
-                <Button className="p-3">Publish</Button>
-            </div>
+            <Row className="justify-between">
+                <CreateSessionForm />
+                <img src="/public/attendance.svg" alt="" className="w-[40%] hidden xl:block" />
+            </Row>
         </div>
     )
 }
